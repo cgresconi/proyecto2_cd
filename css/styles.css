@@ -1,0 +1,261 @@
+/*------------------------formato mobile--------------------------*/
+/* responsive breakpoints:
+   entre <767px para mobile */
+/* GENERAL */
+.ftUbuntuBold {   /* font ubuntu de 700  */
+    font-weight: 700;
+}
+html {
+    scroll-padding-top: 130px;
+    /* permite descontar la altura del encabezado fijo - parte 1 */
+}
+* { /* reset valores default navegador*/
+    box-sizing: border-box;     /* une las capas de los boxes */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;    /* Para que el scrolleo de la pagina sea suave */
+    background-color: #F9F6EE; /* color para toda la pagina */
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.2;
+}
+h1 {    /* tamaño unico para titulo principal */
+    font-size: 48px;
+    color: #ff5f1f;
+}h2 {    /* tamaño unico para titulo secundario */
+    font-size: 32px;
+    color: #ff5f1f;
+}
+ul { /* lista no ordenada para texto de contacto */
+    list-style: none;   /* listas desordenadas sin los puntos */
+}
+main { /* se justifica solo */
+    max-width: 1200px;
+    margin: auto;
+}
+a { /* enlaces heredan el color de texto y no tengan subrayado */
+    text-decoration: none;
+    color: #ff5f1f;
+}
+
+/* SECCION ENCABEZADO */
+.divFlex { /* contenedor flexible */
+    display: flex;
+}
+#bxEncabezado { /* box para encabezado */
+    height: 90px;
+    margin-bottom: 40px;
+    box-shadow: 0px 10px 10px 5px gainsboro; /* efecto de redondeo de borde */
+    justify-content:space-around; /* ordenamiento flexible eje principal*/
+    align-items: center; /* ordenamiento flexible eje secundario*/
+    /* parametros generales para fijar el encabezado */
+    width: 100%; /* para que el encabezado ocupe todo el ancho */
+    left: 0; /* posiciona el encabezado en el extremo izquierdo de la pantalla */
+    top: 0; /* posiciona el encabezado en la parte mas alta de la pantalla */
+    position: fixed; /* fijar el encabezado */
+}
+.mnIcono {  /* menu de icono hamburguesa */
+    display: flex;
+    cursor: pointer;
+}
+.mnEnlaces {    /* menu de puros enlaces */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.mnEnlaces.active { /* evento clic en menu de icono hamburguesa */
+    display: flex;
+}
+#lgPersonal { /* logo personal encabezado */
+    width: 140px;
+    height: 75px;
+    margin: 10px 0px 0px 20px;
+}
+#bxContacto { /* box ancla contacto */
+    margin-right: 30px;
+}
+
+/* SECCION DATOS PERSONALES */
+#scDatosPersonales { /* seccion datos personales */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#igFotoPersonal { /* imagen foto personal */
+    margin-bottom: 28px;
+    margin-top: 130px;
+    width: 300px;
+    /* permite descontar la altura del encabezado fijo - parte 2*/
+    border-radius: 200px;
+}
+#txTitPrincipal { /* texto titulo principal */
+    margin-bottom: 28px;
+    text-align: center;
+}
+.txDatosPersonales1 { /* texto datos personales 1 */
+    text-align: center;
+   /* margin: 0px 20px;    absoluto */
+    margin: 0px 5%;
+}
+.txDatosPersonales2 { /* texto datos personales 2 */
+    text-align: center;
+    /* margin: 20px 20px 0px;    absoluto  */
+    margin: 20px 10% 0px;
+}
+#txUltimoDatoPersonal { /*ultimo texto de datos personales */
+    margin-bottom: 25px;
+}
+#bxBotDescarga {
+    justify-content: center;
+    align-items: center;
+}
+#btDescargaCv { /* boton descarga de cv */
+    /* border: 1px solid #2e518b;  */
+    border-radius: 30px; 
+    /* padding: 13px 35px;   absoluto */
+    padding: 18px 5%;
+    background-color: #f4bb44; 
+    color: #fbfbfb; 
+    font-size: 20px;
+    /* margin-left: 27%; */
+}
+
+/* SECCION CONTACTO */
+#bxSecContacto { /* box seccion de contacto */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 220px 5% 40px;
+    background-color: #ffe5b4;
+    border: 1px solid #ffe5b4;
+    border-radius: 20px;
+    height: 350px;
+}
+#txTitSecundario { /*texto titulo secundario */
+    background-color: rgb(175, 89, 158, 0);
+    margin-top: 90px;
+}
+.bxTxtContacto { /* box texto de contacto */
+    text-align: center;
+    background-color: #ffe5b4;
+    color: #0f0f0f;
+    margin: 20px 8% 0px;
+}
+#txUltTxtContacto { /* ultimo texto de contacto */
+    text-align: center;
+    background-color: rgb(175, 89, 158, 0);
+    color: #0f0f0f;
+    margin: 20px 8% 70px;
+}
+#bxRedesSociales { /* box redes sociales */
+    flex-direction: row;
+    height: 90px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+.txIconoRedSocial { /* tamaño icono red social*/
+    font-size: 60px;
+}
+#clIconoMail { /* color icono mail */
+    color: hwb(63 22% 19%);
+}
+#clIconoGithub { /* color icono github */
+    color:black;
+}
+#clIconoLinkedin { /* color icono linkedin */
+    color:blue;
+}
+
+/* SECCION FOOTER */
+#bxFooter { /* box footer */
+    height: 90px;
+    background-color: #f4bb44;
+    justify-content: center;
+    align-items: center;
+}
+#txFooter { /* texto footer */
+    color: #fbfbfb;
+    background-color: #f4bb44;
+    text-align: center;
+}
+
+/*------------------------formato tablet--------------------------*/
+/* responsive breakpoints:
+   entre 768px hasta 1199px para  tablet */
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    /* SECCION ENCABEZADO */
+    #txTitPrincipal { /* texto titulo principal */
+        text-align: center;
+    }
+   }
+   
+/*------------------------formato desktop--------------------------*/
+/* responsive breakpoints:
+   <1200px para mobile
+   entre 1200px hasta 1500px para desktop */
+   @media screen and (min-width: 1200px) and (max-width: 1500px) {
+    /* SECCION ENCABEZADO */
+    #dtAnInicio {   /* pegar ancla inicio hacia ancla contacto */
+        margin-left: 70%;
+    }
+    #bxEncabezado { /* box para encabezado */
+        justify-content: space-between; /* ordenamiento flexible eje principal*/
+    }
+    .mnIcono {    /* pone cursor como manito y cambia el flex a columna */
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .mnEnlaces {   /* abre otro contenedor para la lista de los enlaces */
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    .mnEnlaces li { /* margen items de lista */
+        margin-right: 20px;
+    }
+
+    /* SECCION DATOS PERSONALES */
+    #scDatosPersonales { /* seccion datos personales */
+        flex-direction: row;
+    }
+    #igFotoPersonal { /* imagen foto personal */
+        min-width: 300px;
+    }
+    #dtBloqueDatosPersonales {
+        flex-direction: column;  
+        max-width: 500px;
+    }
+    #txTitPrincipal { /* texto titulo principal */
+        margin-top: 150px;
+        text-align: center;
+    }
+    .txDatosPersonales1 { /* texto datos personales 1 */
+        text-align: start;
+    }
+    .txDatosPersonales2 { /* texto datos personales 2 */
+        text-align: start;
+        margin: 20px 0px 0px 23px;
+    }
+    #btDescargaCv { /* boton descarga de cv */
+        margin: 10px 0px 0px 30px;
+    }
+    #bxBotDescarga {
+        display:block;
+    }
+    /* SECCION CONTACTO */
+    #bxSecContacto { /* box seccion de contacto */
+        max-width: 700px;
+        height: 270px;
+        margin-top: 220px;
+        margin-left: 25%;
+    }
+    #bxRedesSociales { /* box redes sociales */
+        max-width: 700px;
+        margin-left: 25%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}

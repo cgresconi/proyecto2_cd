@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta description="web proyecto 2 final curso front end codigo pa lante">
+    <meta author="Cesare Desiderati">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesare Desiderati</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- iconos de fontawesome -->
+    <script src="https://kit.fontawesome.com/f5c3f7539d.js" crossorigin="anonymous"></script>
+    <style>
+        /* fonts: google font ubuntu */
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,700&display=swap');
+        /* font-weight para regular 300 y font-weight para bold 700 */
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav id="bxEncabezado" class="divFlex">
+            <div class="mnIcono" id="mnIcono">
+                <i class="fa-sharp fa-solid fa-bars fa-lg"></i>
+            </div>
+            <img id="lgPersonal" src="img/logolinkedincd.jpg" 
+                alt="logo personal" >
+            <ul class="mnEnlaces" id="mnEnlaces">
+                <li><a href="#scDatosPersonales" class="ftUbuntuBold" >Inicio</a></li>
+                <li><a href="#scContacto" id="bxContacto" class="ftUbuntuBold">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <!-- SECCION DATOS PERSONALES -->
+        <section id="scDatosPersonales" class="divFlex">
+            <img id="igFotoPersonal" src="img/fotocesaredesiderati.jpg" alt="foto personal">
+            <div id="dtBloqueDatosPersonales" >
+                <h1 id="txTitPrincipal" class="ftUbuntuBold">Cesare Desiderati</h1>
+                <p class="txDatosPersonales1">Muchos años en el área del testing en Retail, 
+                    Banca e Industria, usando mis conocimientos para encajarlos en las nuevas
+                    tecnologías: Jira, Cypress, Selenium, Azure DEVOPS y TestRail, 
+                    testing con el sistema de Practia Global.
+                </p>
+                <p class="txDatosPersonales2">Hice estos cursos para tomar experiencia:
+                    <ul>
+                        <li class="txDatosPersonales1">- API Testing con POSTMAN: QA y
+                            automatizacion paso a paso
+                        </li>
+                        <li class="txDatosPersonales1">- Programa básico multidisciplinario
+                            de formación en datos e Inteligencia Artificial
+                        </li>
+                        <li class="txDatosPersonales1" id="txUltimoDatoPersonal">
+                            - Introducción a Testing y Calidad de Software
+                        </li>
+                    </ul>
+                </p>
+                <!-- boton de descarga de cv -->
+                <div id="bxBotDescarga" class="divFlex">
+                    <a id="btDescargaCv" 
+                        href="download/cvcesaredesideratitesting.docx" 
+                        download>Descargar mi CV>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION CONTACTO -->
+        <section id="scContacto">
+            <div id="bxSecContacto" class="divFlex">
+                <h2 id="txTitSecundario" class="ftUbuntuBold">
+                    Si estas interesado...
+                </h2>
+                <p class="bxTxtContacto">en que te pueda ayudar a mejorar la calidad 
+                    de tu software en la parte de front-end y comunicacion con el 
+                    back-end (API) aprovechando la experiencia vivida en diferentes
+                    ambientes de mercados verticales y horizontales.
+                </p>
+                <p id="txUltTxtContacto"> CONTACTAME! 
+                    Todos mis datos estan aqui abajo. Gracias por tu interes
+                </p>
+            </div>
+            <article id="bxRedesSociales" class="divFlex">
+                <!-- enlace mailto -->
+                <a href="mailto:cgdesiderati@yahoo.com?correodecesare"
+                    id="clIconoMail" class="txIconoRedSocial">
+                    <span class="fa-regular fa-paper-plane fa-lg"></span>
+                </a>
+                <!-- enlace con este proyecto en github -->
+                <a href="https://cgresconi.github.io/proyecto2_cd/" 
+                    id="clIconoGithub" class="txIconoRedSocial" target="_blank">
+                    <span class="fa-brands fa-github fa-lg"></span>
+                </a>
+                <!-- enlace con mi directorio en linkedin -->
+                <a href="https://www.linkedin.com/in/cv-cesare-desiderati/" 
+                    id="clIconoLinkedin" class="txIconoRedSocial" target="_blank">
+                    <span class="fa-brands fa-linkedin fa-lg"></span>
+                </a>
+            </article>
+        </section>
+
+        <!-- FOOTER  -->
+        <footer id="bxFooter" class="divFlex">
+            <h2 id="txFooter">Código Latam</h2>
+        </footer> 
+
+    </main>
+    <!-- enlace a pagina de js -->
+    <script src="js/miscript.js"></script>
+</body>
+</html>
