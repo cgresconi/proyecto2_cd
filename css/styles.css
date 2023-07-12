@@ -55,16 +55,17 @@ a { /* enlaces heredan el color de texto y no tengan subrayado */
     position: fixed; /* fijar el encabezado */
 }
 .mnIcono {  /* menu de icono hamburguesa */
-    display: flex;
+    position: fixed;
+    top: 10px; /* Ajusta la posición verticalmente según necesites */
+    left: 10px; /* Ajusta la posición horizontalmente según necesites */
+    z-index: 9999; /* Asegura que el icono esté por encima del resto del contenido */
     cursor: pointer;
 }
 .mnEnlaces {    /* menu de puros enlaces */
-    display: none;
-    flex-direction: column;
-    align-items: center;
+    display: none; /* Oculta inicialmente el menú */
 }
 .mnEnlaces.active { /* evento clic en menu de icono hamburguesa */
-    display: flex;
+    display: block; /* Muestra el menú cuando tiene la clase 'active' */
 }
 #lgPersonal { /* logo personal encabezado */
     width: 140px;
